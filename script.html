@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="age">
+    <button>Submit</button>
+
+
+
+    <script>
+        const x=5
+        console.log(x)
+        const name="Delight"
+        console.log(name)
+        const boolean = true
+        console.log(boolean)
+
+        let firstName = "Joe"
+        let age = 22;
+        let isStudent = true;
+        let hobbies = ["coding","music"];
+        let user = {name: "Joe",age: 22};
+
+        console.log("My name is "+ firstName + " I'm " + age + " years old, " + " my hobbies are " + hobbies[0] + " and " + hobbies[1])
+        console.log(`My name is ${firstName} I'm ${age} years old, my hobbies are ${hobbies[0]} and ${hobbies[1]}`)
+
+
+        const myAge = document.getElementById("age").value
+
+        if(myAge >= 18){
+            console.log(`Congratulations you are eligible to vote, you are ${myAge} years old`)
+        }
+        else{
+            console.log(`Sorry you are not eligible, you are ${myAge} years old`)
+        }
+
+        const greet = (name) => `Hello ${name}`
+        console.log(greet("Delight"))
+
+        for(let i = 1; i <= 10; i++){
+            console.log(`Count: ${i}`);
+        }
+
+        let fruits = ["orange", "mango", "watermelon", "apple", "banana", "grape"]
+
+        console.log(fruits[0])
+        console.log(fruits.length)
+
+        for(let i = 0; i < fruits.length; i++){
+            console.log(`With for loop ${fruits[i]}`)
+        }
+
+        fruits.forEach((fruit) => {
+            console.log(`With for each ${fruit}`)
+        })
+
+        const myName = "Delight";
+        function myfunction (myName){
+            return `Hello ${Myname}`
+        }
+        for(let i = 1; i <=5; i++){
+            console.log(`I love coding`);
+        }
+    
+
+
+        
+
+        // Operators
+        // Arithmetic operators: +,-,*,/,%
+        // Comparison operators: ===, !==, >, <, <=, >=age
+        // Logical operators: &&, ||, !
+
+
+
+    </script>
+
+
+
+<!-- <input type="text" id="name">
+        <button type="submit" id="submit">Submit</button>
+
+        
+   
+
+
+    <script>
+        let sumName = document.getElementById('name')
+        let submit =document.getElementById('submit')
+
+        submit.addEventListener('click', () => {
+            let myName = sumName.value
+            if(myName !== ""){
+                console.log(`My name is ${myName}`)
+            }
+            else{
+                console.log('Name cannot be empty')
+            }
+        })
+    </script>
+     -->
+</body>
+</html>
