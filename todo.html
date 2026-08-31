@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel = "stylesheet" href="todo.css">
+</head>
+<body>
+
+    <h1>Todo List App</h1>
+    <div class="container">
+        <div class="todo-box">
+            <input type="text" id="text" placeholder="Enter text here...">
+            <button id="btn">Go</button>
+        </div>
+        <div class="todo-items">
+            <ul id="ul">
+
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const input = document.getElementById("text")
+        const btn = document.getElementById("btn")
+        const ul = document.getElementById("ul")
+
+        btn.addEventListener("click", () => {
+            let text = input.value;
+
+            let li = document.createElement("li")
+            li.innerHTML = text;
+
+            ul.appendChild(li)
+            input.value = "";
+        })
+    </script>
+    
+</body>
+</html>
